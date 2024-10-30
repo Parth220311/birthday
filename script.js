@@ -12,6 +12,7 @@ function updateCountdown() {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Get elements to update
+    
     const daysElem = document.getElementById("days");
     const hoursElem = document.getElementById("hours");
     const minutesElem = document.getElementById("minutes");
@@ -46,7 +47,7 @@ const hoverSound = document.getElementById("hoverSound");
 
 // Add Event Listeners for Sounds
 document.querySelectorAll('button').forEach(elem => {
-    elem.addEventListener('mouseover', () => hoverSound.play());
+    elem.addEventListener('click', () => clickSound.play());
     elem.addEventListener('click', () => clickSound.play());
 });
 
